@@ -12,6 +12,7 @@
         <module>itmayiedu-shopp-eurekaserver</module>
         <module>itmayiedu-shopp-api</module>
         <module>itmayiedu-shopp-member</module>
+        <module>itmayiedu-shopp-message</module>
     </modules>
     <packaging>pom</packaging>
 

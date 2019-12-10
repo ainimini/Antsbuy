@@ -23,6 +23,11 @@ public class BaseApiService {
         return setResult(Constants.HTTP_RES_CODE_200, Constants.HTTP_RES_CODE_200_VALUE, null);
     }
 
+    public ResponseBase setResultSuccess(String msg) {
+
+        return setResult(Constants.HTTP_RES_CODE_200, msg, null);
+    }
+
     //返回成功 可传data值
     public ResponseBase setResultSuccess(Object data) {
 
