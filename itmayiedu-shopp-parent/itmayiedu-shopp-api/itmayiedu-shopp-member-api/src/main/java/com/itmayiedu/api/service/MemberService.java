@@ -26,6 +26,39 @@ public interface MemberService {
     @RequestMapping("findUserById")
     ResponseBase findUserById(Long userId);
 
+    /**
+     * @title:
+     * @description: 用户注册
+     * @author: X
+     * @updateTime: 2019/12/11 15:40
+     * @return:
+     * @param:
+     * @throws:
+     */
     @RequestMapping("/regUser")
     ResponseBase regUser(@RequestBody UserEntity user);
+
+    /**
+     * @title:
+     * @description: 用户登录
+     * @author: X
+     * @updateTime: 2019/12/11 16:14
+     * @return:
+     * @param:
+     * @throws:
+     */
+    @RequestMapping("/login")
+    ResponseBase login(@RequestBody UserEntity user);
+
+    /**
+     * @title:
+     * @description: 使用Token验证实现用户登录
+     * @author: X
+     * @updateTime: 2019/12/11 16:16
+     * @return:
+     * @param:
+     * @throws:
+     */
+    @RequestMapping("/findByTokenUser")
+    ResponseBase findByTokenUser(String token);
 }

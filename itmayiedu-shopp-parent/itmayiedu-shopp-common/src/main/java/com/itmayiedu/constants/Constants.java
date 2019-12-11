@@ -12,4 +12,8 @@ public interface Constants {
 	Integer HTTP_RES_CODE_500 = 500;
 	//发送邮件
 	String SMS_MAIL = "email";
+	// 会员token
+	String TOKEN_MEMBER ="tokenMember";
+	// 用户有效期 90天
+	Long TOKEN_MEMBER_TIME =(long) (60*60*24*90);
 }
